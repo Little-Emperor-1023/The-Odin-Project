@@ -20,7 +20,6 @@ body.loaded .header {
   opacity: 1;
 }
 
-/* ========== Topbar Styles ========== */
 .topbar {
   background-color: #333333;
   padding: 8px 0;
@@ -63,7 +62,6 @@ body.loaded .header {
   color: #aaa;
 }
 
-/* ========== Header Inner ========== */
 .header-inner {
   background: #dcdcdc;
   padding: 15px 0;
@@ -85,7 +83,6 @@ body.loaded .header {
   height: 100px;
 }
 
-/* ========== Navigation ========== */
 .main-menu {
   flex-grow: 1;
   display: flex;
@@ -124,7 +121,6 @@ body.loaded .header {
   color: #007bff;
 }
 
-/* ========== Dropdown ========== */
 .main-menu .dropdown {
   position: absolute;
   top: 100%;
@@ -154,7 +150,6 @@ body.loaded .header {
   background: #ddd;
 }
 
-/* ========== Mobile Nav Toggle ========== */
 .mobile-nav {
   display: none;
   cursor: pointer;
@@ -164,7 +159,6 @@ body.loaded .header {
   top: 15px;
 }
 
-/* ========== CTA Button ========== */
 .get-quote {
   flex-shrink: 0;
 }
@@ -182,7 +176,6 @@ body.loaded .header {
   background: #333;
 }
 
-/* ========== Responsive ========== */
 @media (max-width: 991px) {
   .main-menu {
     display: none;
