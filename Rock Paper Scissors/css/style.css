@@ -1,0 +1,82 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f3f3f3;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-container {
+  text-align: center;
+  background: rgba(255, 255, 255, 0.2); 
+  backdrop-filter: blur(10px);         
+  -webkit-backdrop-filter: blur(10px); 
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 0 25px rgba(0,0,0,0.2);
+  width: 90%;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+
+.hand-btn {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 10px;
+  transition: transform 0.2s ease;
+}
+
+.hand-btn:hover {
+  transform: translateY(-8px) scale(1.05);
+}
+
+.hand-svg {
+  width: 80px;
+  height: 80px;
+  transition: transform 0.3s ease;
+}
+
+.hand-btn:hover .hand-svg {
+  animation: rotate-hand 0.8s ease-in-out;
+}
+
+@keyframes rotate-hand {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(10deg); }
+  50% { transform: rotate(-10deg); }
+  75% { transform: rotate(5deg); }
+  100% { transform: rotate(0deg); }
+}
+
+
+.scoreboard, .result {
+  margin: 15px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+#final-message {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+#restart {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  background: #333;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+}

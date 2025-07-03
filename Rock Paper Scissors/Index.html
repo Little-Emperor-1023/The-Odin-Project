@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rock Paper Scissors - Eghert's Version</title>
+
+  <!-- Full-page background -->
+  <link rel="stylesheet" href="css/background.css">
+  <!-- Main Style -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Background Layer -->
+  <div class="page-background"></div>
+
+  <div class="game-container">
+    <h1>Rock Paper Scissors</h1>
+    
+    <div class="scoreboard">
+      <p>👨 You: <span id="human-score">0</span></p>
+      <p>🤖 Computer: <span id="computer-score">0</span></p>
+    </div>
+
+    <div class="choices">
+      <button data-choice="rock" class="hand-btn">
+        <img src="img/rock.svg" class="hand-svg" alt="Rock" width="80" height="80" />
+        <span>Rock</span>
+      </button>
+
+      <button data-choice="paper" class="hand-btn">
+        <img src="img/paper.svg" class="hand-svg" alt="Paper" width="80" height="80" />
+        <span>Paper</span>
+      </button>
+
+      <button data-choice="scissors" class="hand-btn">
+        <img src="img/scissor.svg" class="hand-svg" alt="Scissors" width="80" height="80" />
+        <span>Scissors</span>
+      </button>
+    </div>
+
+    <div class="result">
+      <p id="round-result">Choose your move to start!</p>
+    </div>
+
+
+    <div class="final-result hidden">
+      <h2 id="final-message"></h2>
+      <button id="restart">Play Again</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

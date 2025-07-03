@@ -1,0 +1,20 @@
+/* Apply to entire viewport */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  font-family: Arial, sans-serif;
+}
+
+/* Full-page animated background */
+.page-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('https://i.pinimg.com/originals/0a/b8/ce/0ab8ce6d94dc4bd5183e953ad6ef797d.gif') no-repeat center center fixed;
+  background-size: cover;
+  z-index: -1;
+}
